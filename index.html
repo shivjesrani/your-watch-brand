@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Your Watches | Wear the Moment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">New Season · 2026</span>
+        <h1>Wear the <em>moment</em>.</h1>
+        <p class="lead">Bold, precise and beautifully made. Watches designed for the way you live, from the boardroom to the trail.</p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn btn-primary">Shop the collection →</a>
+          <a href="about.html" class="btn btn-ghost">Our story</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>10K+</strong><span>Happy clients</span></div>
+          <div><strong>120+</strong><span>Designs</span></div>
+          <div><strong>4.9★</strong><span>Average rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit o1"></div>
+        <div class="orbit o2"></div>
+        <div class="chip-float c1"><span class="dot"></span><div><b>Free delivery</b>Orders above PKR 5,000</div></div>
+        <div class="hero-watch" id="heroWatch"></div>
+        <div class="chip-float c2"><span class="dot" style="background:#7fd1ff;box-shadow:0 0 12px #7fd1ff"></span><div><b>2-year warranty</b>Full coverage</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div><span class="eyebrow">Browse by style</span><h2>Find your <em>rhythm</em></h2></div>
+        <a href="shop.html" class="textlink">See everything →</a>
+      </div>
+      <div class="bento">
+        <a href="shop.html?cat=men" class="tile big reveal">
+          <h3>Men's<br>Collection</h3>
+          <p>Chronographs, skeletons and heritage pieces</p>
+          <div class="art" data-art="men"></div>
+        </a>
+        <a href="shop.html?cat=women" class="tile reveal">
+          <h3>Women</h3>
+          <p>Slim, refined, effortless</p>
+          <div class="art" data-art="women"></div>
+        </a>
+        <a href="shop.html?cat=smart" class="tile reveal">
+          <h3>Smart</h3>
+          <p>Tracking that fits your day</p>
+          <div class="art" data-art="smart"></div>
+        </a>
+        <a href="shop.html?cat=sport" class="tile wide reveal">
+          <h3>Sport &amp; Outdoor</h3>
+          <p>Built for the trail, the pool and the summit</p>
+          <div class="art" data-art="sport"></div>
+        </a>
+        <a href="shop.html" class="tile reveal">
+          <h3>New in</h3>
+          <p>Fresh arrivals this week</p>
+          <div class="art" data-art="all"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="head reveal"><div><span class="eyebrow">Curated for you</span><h2>The <em>edit</em></h2></div></div>
+      <div class="grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <section class="section story">
+    <div class="container story-grid">
+      <div class="reveal">
+        <span class="eyebrow">Why Your Watches</span>
+        <h2>Made to be <em>lived in</em></h2>
+        <p>Every piece starts with one question: will it still feel right in twenty years? We pair trusted movements with sapphire crystals and solid cases, then check every reference before it reaches you.</p>
+        <div class="feature-list">
+          <div><span class="ic">⚙</span><div><b>Accurate movements</b><span>Every watch is tested for timekeeping before dispatch.</span></div></div>
+          <div><span class="ic">◎</span><div><b>Sapphire crystal</b><span>Scratch-resistant glass on our premium references.</span></div></div>
+          <div><span class="ic">↺</span><div><b>Seven-day returns</b><span>Change your mind? Exchange or refund, no fuss.</span></div></div>
+        </div>
+        <a href="about.html" class="btn btn-primary">Read our story</a>
+      </div>
+      <div class="reveal">
+        <div class="story-art">
+          <div class="ring"></div>
+          <div class="ring" style="width:60%;animation-direction:reverse"></div>
+          <div id="storyWatch"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head reveal"><div><span class="eyebrow">Loved by clients</span><h2>Words that <em>matter</em></h2></div></div>
+      <div class="reviews">
+        <div class="review reveal"><div class="stars">★★★★★</div><p>"The finish is extraordinary. It looks even better in person than in the photos."</p><div class="who"><div class="avatar">AR</div><div><strong>Ahmed R.</strong><small>Lahore</small></div></div></div>
+        <div class="review reveal"><div class="stars">★★★★★</div><p>"Delivery was prompt and the packaging feels like a genuine luxury unboxing."</p><div class="who"><div class="avatar">SK</div><div><strong>Sara K.</strong><small>Karachi</small></div></div></div>
+        <div class="review reveal"><div class="stars">★★★★★</div><p>"The Titan Smart Pro battery life is excellent. It does exactly what it promises."</p><div class="who"><div class="avatar">BM</div><div><strong>Bilal M.</strong><small>Islamabad</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="news-box reveal">
+        <span class="eyebrow" style="justify-content:center">Join the list</span>
+        <h2>Be first to <em>see</em> new drops</h2>
+        <p>Early access, private offers and style notes, straight to your inbox.</p>
+        <form class="news-form" id="newsForm">
+          <input type="email" required placeholder="Your email address">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="main.js"></script>
+</body>
+</html>

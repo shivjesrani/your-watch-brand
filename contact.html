@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Contact | Your Watches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="banner">
+    <div class="container">
+      <span class="eyebrow">Concierge</span>
+      <h1>Let's <em>talk</em>.</h1>
+      <p>Our team replies within 24 hours</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container contact-grid">
+      <div class="info-stack reveal">
+        <div class="info-card"><div class="ic">📍</div><div><h4>Showroom</h4><p>Clifton Block 5, Karachi, Pakistan</p></div></div>
+        <div class="info-card"><div class="ic">📞</div><div><h4>Phone</h4><p>+92 300 1234567</p></div></div>
+        <div class="info-card"><div class="ic">✉️</div><div><h4>Email</h4><p>support@yourwatches.com</p></div></div>
+        <div class="info-card"><div class="ic">🕒</div><div><h4>Hours</h4><p>Monday to Saturday, 10:00 AM – 9:00 PM</p></div></div>
+      </div>
+      <form class="form reveal" id="contactForm" novalidate>
+        <h3 class="form-title">Send us a message</h3>
+        <div class="form-grid">
+          <div class="fld" data-field="cName"><label>Full name *</label><input name="name" placeholder="Your full name"><span class="msg">Please enter your name.</span></div>
+          <div class="fld" data-field="cEmail"><label>Email *</label><input name="email" placeholder="you@example.com"><span class="msg">Please enter a valid email.</span></div>
+        </div>
+        <div class="fld"><label>Phone</label><input name="phone" placeholder="03XX XXXXXXX"></div>
+        <div class="fld" data-field="cMsg"><label>Message *</label><textarea name="message" placeholder="How can we help?"></textarea><span class="msg">Please write a message (at least 5 characters).</span></div>
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <p class="form-status" id="contactStatus"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="main.js"></script>
+</body>
+</html>

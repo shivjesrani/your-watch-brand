@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Collection | Your Watches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="banner">
+    <div class="container">
+      <span class="eyebrow">The collection</span>
+      <h1>Every <em>second</em>, yours.</h1>
+      <p>Men's, women's, smart and sport references</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="toolbar">
+        <div class="filters" id="filters"></div>
+        <div class="tools">
+          <input type="text" id="shopSearch" class="field" placeholder="Search watches..." style="min-width:240px">
+          <select id="priceSel" class="field">
+            <option value="all">All prices</option>
+            <option value="0-10000">Under PKR 10,000</option>
+            <option value="10000-20000">PKR 10,000 – 20,000</option>
+            <option value="20000-99999999">Above PKR 20,000</option>
+          </select>
+          <select id="sortSel" class="field">
+            <option value="default">Sort: Featured</option>
+            <option value="low">Price: Low to high</option>
+            <option value="high">Price: High to low</option>
+            <option value="name">Name: A–Z</option>
+          </select>
+        </div>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="emptyMsg">No pieces match your search.</p>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="main.js"></script>
+</body>
+</html>
